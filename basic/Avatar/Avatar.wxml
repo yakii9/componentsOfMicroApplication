@@ -1,0 +1,7 @@
+<!--components/Avatar/Avatar.wxml-->
+<image 
+  style="height: {{height}}; width: {{width}}; border-radius: {{isCircle ? '50%' : '0'}};"  
+  class="avatar" 
+  mode="aspectFill" 
+  src="{{src}}"
+></image>
