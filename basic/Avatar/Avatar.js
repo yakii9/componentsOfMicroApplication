@@ -6,7 +6,7 @@ Component({
   properties: {
     src: {
       type: String,
-      value: '../../resources/cat-avatar.jpg'
+      value: ''
     },
     height: {
       type: String,
