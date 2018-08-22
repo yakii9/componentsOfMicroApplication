@@ -1,0 +1,32 @@
+<!--components/OrderList/OrderList.wxml-->
+<view class="order-list" hidden="{{hideFlag}}">
+  <view wx:for="{{orderList}}" wx:for-item="oneorder" name="orderItem" class="order-detail" wx:key="{{index}}" style="background-color: {{bgColor}}" >
+
+    <view class="order-number">
+      <view class="order-number-left">
+        <text>订单编号: </text>   
+        <text>{{oneorder.id}}</text>
+      </view>
+      <text lass="order-status">{{oneorder.statusName}}</text>
+    </view>
+    <view class="order-goodslist" bindtap="navigateToDetail" data-id="{{oneorder.id}}">
+      <view wx:for="{{oneorder.goodslist}}" wx:key="{{onegoods.goodsid}}" wx:for-item="onegoods" class="orderinfoBox-out"> 
+        <orderinfoBox detailInfo="{{onegoods.newgoodsinfo}}"   bgColor="#F6F6F6"/>
+      </view>
+
+    </view>
+
+    <view class="order-total">
+      共计{{oneorder.goodslist.length}}件商品, 合计<text class="order-total-money">{{oneorder.money}}</text>元
+    </view>
+
+    <view class="pay-btns-container">
+      <button class="prev-btn {{oneorder.status == 1?'cancel-btn':''}}" data-id="{{oneorder.id}}" wx:if="{{oneorder.btnTextArray.length > 0}}" data-btnstatus="{{oneorder.status}}" bindtap="preBtnHandler" >{{oneorder.btnTextArray[0]}}</button>
+      <button class="next-btn  {{oneorder.status == 1?'pay-btn':''}}" wx:if="{{oneorder.btnTextArray.length == 2 && ( oneorder.status == 1 || oneorder.status == 2)}}" data-id="{{oneorder.id}}" data-btnstatus="{{oneorder.status}}" data-fee="{{oneorder.money}}" data-item="{{oneorder}}" bindtap="confirmBtnHandler">{{oneorder.btnTextArray[1]}}</button>
+    </view>
+  </view>
+
+  <view class="wait-order" wx:if="{{orderList.length==0}}">
+    <text>没有相关订单哦~</text>
+  </view>
+</view>

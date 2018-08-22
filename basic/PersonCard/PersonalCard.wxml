@@ -1,0 +1,12 @@
+<!--components/PersonCard/PersonalCard.wxml-->
+<view class='container'>
+  <avatar
+    src='{{ userInfo.avatar }}'
+    height="120rpx"
+    width="120rpx" 
+  />
+  <view class='detail-container'>
+    <text class='name'>{{ userInfo.name }}</text>
+    <text class='intro'>{{ userInfo.intro }}</text>  
+  </view>
+</view>

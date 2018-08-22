@@ -1,0 +1,22 @@
+/* components/TabButton/TabButton.wxss */
+.tap-nav{
+  display: flex;
+  color: #9C9C9E;
+  font: 16px 'PingFangSC-Regular','Microsoft YaHei','微软雅黑';
+  justify-content: space-around;
+  align-items: center;
+  height: 76rpx;
+}
+.nav-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-top: 8rpx solid #fff;
+  color: #222222;
+  font-size: 28rpx;
+}
+.active{
+  border-top: 8rpx solid #000;
+  color: #000;
+}

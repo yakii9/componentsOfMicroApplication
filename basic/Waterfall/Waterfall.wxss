@@ -1,0 +1,11 @@
+/* components/Waterfall/Waterfall.wxss */
+.waterfall{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #000;
+}
+.column{
+  width: 333rpx;
+}

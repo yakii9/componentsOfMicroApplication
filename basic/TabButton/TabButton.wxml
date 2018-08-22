@@ -1,0 +1,6 @@
+<!--components/TabButton/TabButton.wxml-->
+<view class='tap-nav' >
+  <view wx:for="{{textArrays}}" wx:key="{{index}}" class="nav-button" style="height:{{height}}" bindtap="checkBtn" data-index="{{index}}" class="nav-button {{nowIndex == index?'active': ''}}" >
+    {{item}}
+  </view>
+</view>

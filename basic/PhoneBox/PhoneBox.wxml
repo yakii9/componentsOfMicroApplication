@@ -1,0 +1,4 @@
+<!--components/PhoneBox/PhoneBox.wxml-->
+<view class="phone-box" style="width:{{width}}rpx;height:{{width}}rpx;background:radial-gradient( rgba({{bgColorRGB}},0.6) 20% ,rgba({{bgColorRGB}},0.8) 50%,rgba({{bgColorRGB}},1) 90% );">
+  <image src="{{img}}" class="phone-image" style="width:{{0.4*width}}rpx;height:{{0.8*width}}rpx"></image>
+</view>

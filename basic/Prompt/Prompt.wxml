@@ -1,0 +1,16 @@
+<!--components/Prompt/Prompt.wxml-->
+<view class="prompt-container" hidden="{{isHide}}">
+  <view class="shade-bg" wx:if="{{shadeShow}}"></view>
+  <view class="prompt" style="width:{{width}}rpx;height:{{height}}rpx" >
+    <image class="close" bindtap="close" src="/static/images/btn_close.png" wx:if="{{closeShow == 'show'}}"></image>
+    <text class="title {{titleStyle}}"  wx:if="{{showTitle==='show'}}">{{title}}</text>
+    <view class="slot-container">
+      <slot>
+    
+      </slot>
+    </view>
+    
+    <button class="close-btn" bindtap="close" style="width:{{width-90}}rpx;height:{{btnStyle.height}}rpx" wx:if="{{showbtn === 'show'}}">{{btnText}}</button>
+  </view>
+
+</view>

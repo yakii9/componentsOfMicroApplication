@@ -1,0 +1,107 @@
+/* components/OrderList/OrderList.wxss */
+.order-list{
+  color: #000;
+  font-family: 'PingFang SC';
+}
+.order-number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #D1D1D1;
+  font-size: 13px;
+  color: #1B1B1B;
+  font-family: 'PingFangSC-Light';
+  margin-bottom: 16rpx;
+  padding: 10rpx 32rpx 10rpx 0;
+}
+.order-number-left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.order-number-left text:first-of-type{
+  flex:1;
+}
+.order-number-left text:last-of-type{
+  width: 400rpx;
+  margin-left: 10rpx;
+}
+.order-status{
+  font-size: 13px;
+  margin-right: 34rpx;
+}
+.order-detail{
+  color: #000;
+  padding: 0 0 24rpx 29rpx;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16rpx;
+}
+.order-info{
+  background: #54545C;
+  height: 154rpx;
+  padding: 16rpx 0rpx 18rpx 20rpx;
+  margin-top: 28rpx;
+}
+/*合计*/
+.order-total{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 13px;
+  border-top: 2rpx solid #D1D1D1;
+  padding: 16rpx 33rpx 20rpx 0;
+  font-family: 'PingFang SC';
+}
+.order-total-money{
+  color: #FB2432;
+  font-size: 18px;
+  margin-left: 10rpx;
+}
+/*按钮*/
+.pay-btns-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 33rpx;
+}
+.pay-btns-container button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 54rpx;
+  border-radius: 10rpx;
+  font-size: 13px;
+  font-family: 'PingFangSC-Light';
+  color: #F8F8F8;
+}
+.prev-btn{
+  background: #464646;
+}
+.next-btn {
+  background: #1B1B1B;
+  margin-left: 20rpx;
+}
+.pay-btns-container button.cancel-btn{
+  background: none;
+  color: #464646;
+}
+.pay-btns-container button.pay-btn{
+  background: #FF4A55;
+  color: #F8F8F8;
+}
+/*无订单*/
+.wait-order{
+  margin-top: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wait-order text{
+  font-size: 27px;
+  color: #464646;
+}
+.orderinfoBox-out{
+  margin-bottom: 16rpx;
+}

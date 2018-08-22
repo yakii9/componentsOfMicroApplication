@@ -1,0 +1,23 @@
+/* components/addMinusBtns/addMinusBtns.wxss */
+/*商品列表加减按钮*/
+.cart-tobuy-btns{
+  display: flex;
+  justify-content: space-between;
+  line-height: 40rpx;
+  width: 136rpx;
+  height: 40rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.cart-tobuy-btns text{
+  text-align: center;
+}
+.cart-tobuy-btns text:last-of-type{
+  border: 0;
+}
+.cart-tobuy-btns text:nth-of-type(2){
+  width: 60rpx;
+}
+.cart-modeCount{
+  width: 40rpx;
+}

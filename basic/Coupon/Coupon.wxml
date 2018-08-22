@@ -1,0 +1,16 @@
+<!--components/Coupon/Coupon.wxml-->
+<view class="coupon" style="width:{{width}}rpx;height:{{height}}rpx">
+  <image src="/static/images/btn_coupon_popup.png">
+    <view class="coupon-text" style="padding: {{0.15*height}}rpx">
+      <view class="coupon-title">{{couponinfo.name}}</view>
+      <view class="coupon-detail">
+        <view class="coupon-range">适用门槛: 金额大于{{couponinfo.threshold || 0}}元</view>
+        <view class="coupon-time">有效日期: {{couponinfo.effect}}</view>
+      </view>
+      <slot></slot>
+    </view>
+    <view class="useBtn" bindtap="useHandler" data-id="{{id}}"></view>
+    
+  </image>
+  
+</view>

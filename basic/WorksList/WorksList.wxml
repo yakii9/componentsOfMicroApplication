@@ -1,0 +1,32 @@
+<!--components/WorksList/WorksList.wxml-->
+<view class="works-outer-box">
+  <view class="works-box" wx:for="{{works}}" wx:key="{{index}}">
+    <view class="recommend" wx:if="{{recommend==='show' && index=== 3 }}">
+      <text class="recommend-title">您可能也感兴趣：</text>
+      <view class="tag-container" wx:if="">
+        <view wx:for="{{tags}}" class="recommend-tag">{{item}}</view>
+      </view>
+    </view>
+  
+    <phoneBox bgColorRGB="{{item.bgColorRGB}}" bindtap="imgHandler" width="320" img="{{item.img}}" data-id="{{item.id}}"/>
+    <view class="goods-info-box">
+      <view class="goods-info" wx:if="{{showType==='normal'}}">
+        <text class="goods-name">{{item.name}}</text>
+        <text class="price">￥{{item.lowPrice || 39.99}}起</text>
+        <text class="gray">{{item.buynum?item.buynum:0}}人付款</text>
+        
+      </view>
+      <view class="goods-info" wx:if="{{showType==='mine'}}">
+        <text class="goods-name-mine">{{item.name}}</text>
+        <text class="star-num">{{item.star}}人喜欢</text>
+      </view>
+
+      <view class="works-box-stars {{showType==='mine'?'works-stars-mine':'' }}">
+        <image src="/static/images/star_unactive.png" hidden="{{item.isStar}}" bindtap="starHandler"   data-item ="{{ {id: item.id,isStar:item.isStar,index:index} }}"></image>
+        <image class="isStarImg" src="/static/images/star_active.png" hidden="{{!item.isStar}}" bindtap="starHandler" data-item ="{{ {id: item.id,isStar:item.isStar,index:index} }}"></image>
+        <text class="{{item.isStar?'star-active':''}}" hidden="{{showType==='mine'}}">{{item.star}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+

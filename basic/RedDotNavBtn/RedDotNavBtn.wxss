@@ -1,0 +1,50 @@
+/* components/RedDotNavBtn/RedDotNavBtn.wxss */
+
+.container {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+}
+
+.image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.text {
+  font-family: PingFangSC-Light;
+}
+
+.red-dot {
+  width: 30rpx;
+  height: 30rpx;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  z-index: 99;
+  position: absolute;
+  right: 10rpx;
+  top: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigDot{
+  width: 40rpx;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.red-dot .num {
+  font-size: 24rpx;
+}
+.text {
+  font-size: 32rpx;
+  font-weight: 200;
+}

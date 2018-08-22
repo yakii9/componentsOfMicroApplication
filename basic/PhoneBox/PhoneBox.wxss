@@ -1,0 +1,14 @@
+/* components/PhoneBox/PhoneBox.wxss */
+.phone-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330rpx;
+  height: 330rpx;
+  background-color: #eee;
+  border-radius: 15rpx;
+}
+.phone-image{
+  border: 2rpx solid #ccc;
+  border-radius: 18rpx;
+}

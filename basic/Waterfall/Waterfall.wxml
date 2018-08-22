@@ -1,0 +1,11 @@
+
+<view class="waterfall" >
+  <view class="column" >
+    <slot name="before"></slot>
+  </view>
+  <view class="column">
+    <slot name="after"></slot>
+  </view>
+</view>
+
+

@@ -1,0 +1,4 @@
+<!--components/WhiteToast/WhiteToast.wxml-->
+<view class="whiteToast" wx:if="{{show === 'show'}}" style="width:{{width}}rpx;height:{{height}}rpx">
+  <slot></slot>
+</view>

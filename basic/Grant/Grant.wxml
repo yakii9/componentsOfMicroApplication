@@ -1,0 +1,7 @@
+<!--components/Grant/Grant.wxml-->
+<view class="grant-container" wx:if="{{!isGrant}}">
+
+  <view class="grant-title">授权提示框</view>
+  <view>授权获取您的微信用户信息</view>
+  <button open-type='getUserInfo' bindgetuserinfo='handleAcquireUserInfo' class='login-btn' >确认授权</button>
+</view>
