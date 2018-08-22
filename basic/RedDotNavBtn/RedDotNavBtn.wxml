@@ -1,0 +1,8 @@
+<!--components/RedDotNavBtn/RedDotNavBtn.wxml-->
+<view class='container' bindtap='onTap'>
+  <image class="image" src='{{ src }}'></image>
+  <text class='text'>{{ text }}</text>
+  <view class="red-dot {{num > 10?'bigDot':''}}" wx:if="{{ num != 0 }}">
+    <text class='num'>{{ num > 999 ? '999+':num }}</text>
+  </view>
+</view>

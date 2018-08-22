@@ -1,0 +1,59 @@
+/* components/Prompt/Prompt.wxss */
+.prompt-container{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.prompt{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10rpx;
+  background: #fff;
+  z-index: 1000;
+  color: #000;
+}
+.close{
+  position: absolute;
+  right: 27rpx;
+  top: 27rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+.close-btn{
+  position: absolute;
+  bottom: 52rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B1B1B;
+  color: #fff;
+  font-size: 29rpx;
+}
+.title{
+  position: absolute;
+  top: 27rpx;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'PingFangSC-Regular';
+}
+.title.center{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title.left{
+  left: 38rpx;
+}
+.slot-container{
+  margin: 64rpx 0 0 38rpx;
+}
+.shade-bg{
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5)
+}

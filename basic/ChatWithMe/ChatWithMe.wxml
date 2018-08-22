@@ -1,0 +1,4 @@
+<!--components/ChatWithMe/ChatWithMe.wxml-->
+<button open-type="contact" class="chat-btn">
+  <image src="/static/images/order/chatWithUs.png"></image>
+</button>

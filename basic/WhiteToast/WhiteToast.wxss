@@ -1,0 +1,7 @@
+/* components/WhiteToast/WhiteToast.wxss */
+.whiteToast{
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  z-index: 10;
+  color: #000;
+}

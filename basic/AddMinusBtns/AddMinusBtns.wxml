@@ -1,0 +1,6 @@
+<!--components/addMinusBtns/addMinusBtns.wxml-->
+<view class="cart-tobuy-btns">
+  <text bindtap="minusEventListener" class="cart-modeCount" >-</text>
+  <text>{{num}}</text>
+  <text bindtap="addEventListener" class="cart-modeCount" >+</text>
+</view>

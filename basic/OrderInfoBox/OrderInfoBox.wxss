@@ -1,0 +1,27 @@
+/* components/OrderInfoBox/OrderInfoBox.wxss */
+.order-info-box{
+  display: flex;
+  justify-content: flex-start;
+  color: #6B6B6B;
+  font-size: 14px;
+}
+.order-info-img{
+  width: 143rpx;
+  height: 143rpx;
+  border-radius: 10rpx;
+}
+.order-info-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20rpx;
+  font-size: 12px;
+  padding: 10rpx 0;
+}
+.order-info-text text:first-child{
+  color: #000;
+  font: 14px 'PingFangSC-Regular';
+}
+.order-info-text text:last-child{
+  color: #EB4847;
+}

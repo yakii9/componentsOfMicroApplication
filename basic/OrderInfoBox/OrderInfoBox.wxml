@@ -1,0 +1,9 @@
+<view class="order-info-box" style="background-color: {{bgColor}}">
+  <phoneBox img="{{detailInfo.img}}" bindtap="gotoGoodsPage" width="143"/>
+  <view class="order-info-text">
+    <text>{{detailInfo.name}}</text>
+    <text hidden="{{!detailInfo.model}}">{{detailInfo.model}} / {{detailInfo.material}}</text>
+    <text>数量: {{detailInfo.num}}</text>
+    <text>￥{{detailInfo.price}}</text>
+  </view>
+</view>
